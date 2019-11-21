@@ -65,7 +65,7 @@ def turn(board)
   user_input = gets.strip
   user_input = input_to_index(user_input)
   if valid_move?(board, user_input)
-    move(board, user_input)
+    move(board, user_input, char="X")
     display_board(board)
   else until valid_move?(board, user_input) == true
       turn(board)
