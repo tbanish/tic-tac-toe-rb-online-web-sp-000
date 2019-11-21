@@ -49,12 +49,14 @@ def position_taken?(board, index)
 end
 
 
-
-
-
-
-
-
+# valid_move? method
+def valid_move?(board, index)
+  if position_taken?(board, index) == false && index.between?(0,8) == true
+    true
+  else position_taken?(board, index) == true
+    false
+  end
+end
 
 
 #turn
