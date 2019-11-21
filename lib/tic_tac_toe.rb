@@ -122,8 +122,9 @@ def draw?(board)
     return false
   elsif won?(board)
     return false
+  elsif full?(board)
+    return false
   end
-  full?(board)
 end
 
 #game over?
