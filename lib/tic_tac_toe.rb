@@ -34,7 +34,7 @@ end
 
 
 #move
-def move(board, user_input, char="X")
+def move(board, user_input)
   board[user_input] = char
 end
 
