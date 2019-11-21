@@ -144,5 +144,5 @@ end
 
 
 def play(board)
-  until 
+  until over?(board)
 
