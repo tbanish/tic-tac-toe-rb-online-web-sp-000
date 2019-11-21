@@ -65,13 +65,13 @@ def turn(board)
   user_input = gets.strip
   user_input = input_to_index(user_input)
   char = current_player(board)
-  if valid_move?(board, user_input)
-    move(board, user_input, char)
-    display_board(board)
-  else until valid_move?(board, user_input) == true
+  until valid_move?(board, user_input) == true
       turn(board)
       break
     end
+  if valid_move?(board, user_input)
+    move(board, user_input, char)
+    display_board(board)
   end
 end
 
