@@ -39,5 +39,12 @@ def move(board, user_input, char="X")
 end
 
 
-
+# postion_taken? method
+def position_taken?(board, index)
+  if board[index] == " " || board[index] == "" || board[index]== nil
+    false
+  else board[index] == "X" || "O"
+    true
+  end
+end
 
