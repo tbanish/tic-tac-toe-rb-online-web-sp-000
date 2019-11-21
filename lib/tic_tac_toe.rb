@@ -144,8 +144,12 @@ end
 
 
 def play(board)
-  9.times do
+  if !over?(board)
     turn(board)
+  elsif won?(board)
+    puts "Congratulations player #{winner(board)}!"
+  elsif draw?(board)
+    puts "The game is a draw."
   end
 end
 
